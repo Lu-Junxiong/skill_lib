@@ -1,0 +1,4 @@
+interface:
+  display_name: "Function-Level Docs"
+  short_description: "Document module logic at function level"
+  default_prompt: "Extract function-level docs for this module."
