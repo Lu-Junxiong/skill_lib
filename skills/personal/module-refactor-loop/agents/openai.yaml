@@ -1,4 +1,4 @@
 interface:
   display_name: "Module Refactor Loop"
   short_description: "Run module refactor loops"
-  default_prompt: "Use module-refactor-loop to align requirements, plan, implement, verify, commit, and update module memory for this refactor."
+  default_prompt: "Use module-refactor-loop to run one scoped module refactor with boundary analysis, verification, and durable memory updates."
