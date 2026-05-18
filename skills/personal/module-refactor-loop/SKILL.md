@@ -26,6 +26,10 @@ Use [REFERENCE.md](REFERENCE.md) for:
 - verification selection;
 - memory update gate.
 
+If the refactor reveals function-level logic that cannot be understood or
+diagnosed quickly, invoke `function-level-design` for that specific module or
+workflow instead of expanding this refactor loop into detailed function docs.
+
 Use [TEMPLATES.md](TEMPLATES.md) for:
 
 - module plan format;

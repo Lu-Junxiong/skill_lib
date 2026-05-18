@@ -108,6 +108,21 @@ If any item cannot be verified from code, write `Unknown from current code` and 
 - Make problem locations actionable: name the function, branch, state transition, or dependency to inspect.
 - Do not write generic statements like "handles validation", "processes data", or "manages errors" without explaining the actual logic.
 
+## 30-Second Diagnostic Rule
+
+A function-level doc is not done until a future reader can answer these within
+30 seconds for each important function or flow:
+
+- What does it do?
+- What are its inputs and constraints?
+- What does it return or raise?
+- What state or external resource does it touch?
+- If it is wrong, where should I inspect first?
+
+If the answer requires reading the implementation line by line, the doc is too
+vague. Tighten the responsibility, inputs, outputs/errors, side effects, and
+problem signals.
+
 ## Problem Signals Checklist
 
 Look for and document:
