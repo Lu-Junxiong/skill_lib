@@ -26,9 +26,9 @@ Use [REFERENCE.md](REFERENCE.md) for:
 - verification selection;
 - memory update gate.
 
-If the refactor reveals function-level logic that cannot be understood or
-diagnosed quickly, invoke `function-level-design` for that specific module or
-workflow instead of expanding this refactor loop into detailed function docs.
+If logic is unclear, trace only the relevant functions: inputs, outputs/errors,
+side effects, callers, dependencies, invariants, and risky branches. Do not
+generate exhaustive function documentation unless the user asks for it.
 
 Use [TEMPLATES.md](TEMPLATES.md) for:
 

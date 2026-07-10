@@ -38,6 +38,20 @@ Start every loop by stating:
 
 Challenge vague conclusions against source facts. Do not accept a proposed deletion or abstraction until references and callers are checked.
 
+## Refactor Tests
+
+- Apply the deletion test to helpers and modules: if deleting one removes
+  complexity, it is probably shallow; if complexity spreads to callers, it is
+  earning its place.
+- Validate external input once at its owning seam. Internal callers should trust
+  normalized state; keep checks for runtime data, persistence, and process seams.
+- Introduce an adapter only when behavior actually varies. One implementation
+  does not justify a speculative seam.
+- Trace unclear logic through exact symbols, call order, state changes, errors,
+  and risky branches. Mark facts that source code cannot verify as unknown.
+- Test observable behavior through the module's public interface. Delete tests
+  that only preserve obsolete internal structure.
+
 ## Requirement Classification
 
 Merge the user's current request, stable preferences from `user-requirements.md`, and friction found in source/tests.
