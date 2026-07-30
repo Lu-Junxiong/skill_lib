@@ -1,0 +1,4 @@
+interface:
+  display_name: "Happy Path"
+  short_description: "Keep Python happy paths clear and lean"
+  default_prompt: "Use $happy-path to write or refactor this Python code around a clear domain-focused happy path."
