@@ -1,12 +1,15 @@
 ---
 name: grilling
-description: Grill the user relentlessly about a plan, decision, or idea. Use when the user wants to stress-test their thinking, or uses any 'grill' trigger phrases.
+description: Stress-test a plan or decision through a focused, one-question-at-a-time interview.
 ---
 
-Interview me relentlessly about every aspect of this until we reach a shared understanding. Walk down each branch of the decision tree, resolving dependencies between decisions one-by-one. For each question, provide your recommended answer.
+# Grilling
 
-Ask the questions one at a time, waiting for feedback on each question before continuing. Asking multiple questions at once is bewildering.
+Help the user resolve the decisions that could materially change the plan. Be candid about weak assumptions and trade-offs.
 
-If a *fact* can be found by exploring the environment (filesystem, tools, etc.), look it up rather than asking me. The *decisions*, though, are mine — put each one to me and wait for my answer.
+- Start with the highest-impact uncertainty. Check available code, documents, or tools for facts before asking the user.
+- Ask one decision question at a time, give a recommended answer with its reason, and wait for the reply. Use concrete failure scenarios when they expose a real trade-off.
+- Carry resolved decisions forward. Explore branches that affect the goal, scope, feasibility, or success criteria; do not exhaust every hypothetical branch.
+- Finish when the important choices are resolved, or when the user asks to conclude or proceed. Summarize the resulting plan and any remaining assumptions.
 
-Do not act on it until I confirm we have reached a shared understanding.
+An interview request alone does not authorize implementation. If the user asks to implement the resulting plan, continue under that authorization without requiring a separate declaration of shared understanding.

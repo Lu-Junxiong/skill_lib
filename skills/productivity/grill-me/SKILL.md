@@ -1,7 +1,6 @@
 ---
 name: grill-me
-description: A relentless interview to sharpen a plan or design.
-disable-model-invocation: true
+description: Interview the user to stress-test a plan or design, one decision at a time.
 ---
 
-Run a `/grilling` session.
+Follow [grilling](../grilling/SKILL.md) for the user's current request. This is the short invocation alias; keep the interview workflow in that skill.
